@@ -232,7 +232,7 @@ let s:color_map = {
     \ '#585858': '240', '#626262': '241', '#6c6c6c': '242', '#767676': '243',
     \ '#808080': '244', '#8a8a8a': '245', '#949494': '246', '#9e9e9e': '247',
     \ '#a8a8a8': '248', '#b2b2b2': '249', '#bcbcbc': '250', '#c6c6c6': '251',
-    \ '#d0d0d0': '252', '#dadada': '253', '#e4e4e4': '254', '#eeeeee': '255',
+    \ '#d0d0d0': '252', '#dadada': '253', '#e4e4e4': '254', '#e3e3e3': '255',
     \ }
 
 
@@ -312,7 +312,7 @@ if s:style == "light"
     endif
 else
     if s:contrast == "high"
-        hi Normal       guifg=#eeeeee
+        hi Normal       guifg=#e3e3e3
     elseif s:contrast == "low"
         hi Normal       guifg=#bcbcbc
     else
@@ -324,7 +324,7 @@ if s:style == "light"
     if s:contrast_bg == "high"
         hi Normal                       guibg=#ffffff
     else
-        hi Normal                       guibg=#eeeeee
+        hi Normal                       guibg=#e3e3e3
     endif
 else
     if s:contrast_bg == "high"
